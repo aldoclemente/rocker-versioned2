@@ -1,0 +1,3 @@
+[submodule "s6-archlinux-docker"]
+	path = s6-archlinux-docker
+	url = https://github.com/p42/s6-archlinux-docker.git
