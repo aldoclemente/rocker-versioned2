@@ -109,7 +109,11 @@ RUN cd && Rscript tmp.R
 #RUN cd && echo "install.packages('tigris', repos='https://cran.stat.unipd.it/')" > tmp.R
 #RUN cd && Rscript tmp.R
 
-RUN cd && echo "install.packages(c('leafsync', 'latex2exp'), repos='https://cran.stat.unipd.it/')" > tmp.R
+RUN cd && echo "install.packages(c('leafsync', 'latex2exp', 'ggmap'), repos='https://cran.stat.unipd.it/')" > tmp.R
+RUN cd && Rscript tmp.R
+RUN cd && rm tmp.R
+
+RUN cd && echo "install.packages(c('patchwork'), repos='https://cran.stat.unipd.it/')" > tmp.R
 RUN cd && Rscript tmp.R
 RUN cd && rm tmp.R
 
